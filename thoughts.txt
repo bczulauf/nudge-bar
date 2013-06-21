@@ -1,0 +1,57 @@
+Each component is a human readable API with inputs and outputs. 
+
+Flash Button API
+
+Inputs: Click
+Outputs: Toggle Flash
+
+Photo Button API
+Inputs: Click
+Outputs: Take Photo
+
+Camera API
+
+Inputs: Take Photo, Toggle Flash, Rotate screen
+Outputs: PNG
+
+Form API
+
+Inputs: Text, PNG (doesn't care how it recevies this data e.g. from inputs or from camera)  
+Outputs: JSON to email, JSON
+
+Input API
+Inputs: User typing
+Outputs: Text
+
+ 
+
+
+Each component should have a human readable API.
+
+For example, the camera should take inputs - Take Photo, Turn On, Turn Off. And it should have outputs like Picture.
+
+I could then connect components.
+
+Button input is a click > It then outputs take photo > camera receives input take photo and outputs photo > email client takes input photo (needs input email address) > outputs email
+
+You would then need to add an input which takes email address and outputs email adress to make the email client work.
+
+For complicated components you don't need to understand what they do to produce the output, you just need to choose the output and make sure it is compatible with another component.
+
+
+-----
+
+Somehwere you should be able to add a component from a component library
+
+
+I want to create a schedule app for an autistic kid. It should 
+
+Doubleclick on an element and it will overlay a dark screen and show you the inputs and outputs
+
+When there is a match you tell how.
+
+Hold over another component to link. Once you link you can move. So every draggable is a droppable?
+
+What if each component has a single ouput?
+
+ 
