@@ -7,26 +7,35 @@
     <link rel="stylesheet" href="bar.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body>
-	  <div id="n-nav" class="clearfix">
-			<ul id="n-tabs">
+	  <nav class="clearfix">
+			<ul class="tabs">
 		  	<li class="sel">Welcome</li><li>Menu</li><li>Camera</li><li>Email</li>
 		  </ul>
-		  <div class="n-add-tab"></div>
-					<div class="n-action-btn">Publish</div>
-	  </div>
-	  <div class="n-container clearfix">
-		  <div class="n-components">
-				<div id="n-component">
-					<div class="n-drop">
-			  	  <div class="block n-droppable"></div>
+		  <div class="add-tab"></div>
+			<div class="btn critical">Publish</div>
+			<div class="btn primary">Preview</div>
+	  </nav>
+	  <div class="container clearfix">
+		  <div class="components">
+			  <div class="row clearfix">
+					<div class="drop">
+			  	  <div class="block drk n-droppable"></div>
 			    </div>
-					<div class="n-drop">
-			  	  <div class="btn-action btn-lg n-droppable">Button</div>
-			    </div>
-					<div class="n-drop">
-						<img class="n-droppable image" src="placeholder.png"></img>
+					<div class="drop">
+			  	  <div class="block lt n-droppable"></div>
 			    </div>
 			  </div>
+			  <div class="row clearfix">
+					<div class="drop">
+			  	  <div class="btn-action btn-lg n-droppable">Button</div>
+			    </div>
+					<div class="drop">
+			  	  <div class="primary btn-lg n-droppable">Button</div>
+			    </div>
+			  </div>
+				<div class="n-drop">
+					<img class="n-droppable image" src="placeholder.png"></img>
+		    </div>
 		  </div>
 			<div class="n-device-container"></div>	
 	  </div>

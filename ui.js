@@ -49,7 +49,6 @@ $(document).ready(function () {
         .css({position:'relative', left:0, top:0, width: '100%'})
         .removeClass("n-droppable")
         .addClass("n-draggable flex")
-        .resizable()
         .draggable({ 
           snap: true,
           containment: ".n-device-container",
